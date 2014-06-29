@@ -23,6 +23,11 @@ app.configure(function() {
 	});
 });
 
+/*
+ * location:QASystem/views/index.jade
+ * requirement: require.js
+ * loads: QASystem/public/js/boot.js
+ */
 app.get('/', function(req, res) {
 	res.render('index.jade');
 });
