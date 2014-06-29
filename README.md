@@ -7,7 +7,7 @@ Requirements:
 <br/>
 (2) Mongodb  : Download MongoDb and place the bin folder in QASystem.
 
-Run:
-1) Run the commands 
-  bin/mongod --dbpath data &
+Run: <br/>
+(1) Run the commands <br/> 
+  bin/mongod --dbpath data & <br/>
   node app.js
