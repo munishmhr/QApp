@@ -1,16 +1,16 @@
 define(['router'], function(router) {
-  var initialize = function() {
-  	console.log("inside QApp.js");
-    bootup();
-  };
+	var initialize = function() {
+		console.log("QApp.js::initialize");
+		bootup();
+	};
 
-   var bootup = function(){
-   	window.location.hash = 'index';
-   	Backbone.history.start();
-   };
+	var bootup = function() {
+		console.log("QApp.js::bootup");
+		window.location.hash = 'index';
+		Backbone.history.start();
+	};
   
-  return {
-    initialize : initialize
-  };
-
+	return {
+		initialize : initialize
+	};
 });
