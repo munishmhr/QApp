@@ -1,6 +1,9 @@
-define(['models/tech'], function(tech) {
+/*
+	Collection for getting data from node @ address /index.
+*/
+define(['models/techModel'], function(techModel) {
   var TechCollection = Backbone.Collection.extend({
-    model: tech,
+    model: techModel,
     url : '/index/',
   });
   return TechCollection;

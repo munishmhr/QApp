@@ -1,6 +1,19 @@
-<ul><%=technology %></ul>
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" 
+        href="#<%=technology %>"><%=technology %></a>
+    </div>
 
-<% for(var subtechnology in subtechnologys) { %>
-           <li><%= subtechnologys[subtechnology] %></li>
- <% } %>
+    <div id="<%=technology %>" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <% for(var subtechnology in subtechnologys) { %>
+            <dd><a class="list-group-item" id='subtechList'><%= subtechnologys[subtechnology] %></a></dd>
+ 		    <% } %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 

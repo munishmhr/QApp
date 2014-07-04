@@ -1,16 +1,20 @@
-define(['router'], function(router) {
-	var initialize = function() {
-		console.log("QApp.js::initialize");
-		bootup();
-	};
+/*
+  This class is called in boot file as redirecting to view which should be represent to user
+  when "/" address is asked.
+*/
 
-	var bootup = function() {
-		console.log("QApp.js::bootup");
-		window.location.hash = 'index';
-		Backbone.history.start();
-	};
+define(['router'], function(router) {
+  var initialize = function() {
+    bootup();
+  };
+
+  var bootup = function(){
+   	window.location.hash = 'index';
+   	Backbone.history.start();
+  }
   
-	return {
-		initialize : initialize
-	};
+  return {
+    initialize : initialize
+  };
+
 });

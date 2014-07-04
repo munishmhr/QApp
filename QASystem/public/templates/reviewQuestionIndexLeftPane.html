@@ -1,18 +1,20 @@
-<p>Technology : <%=subtechnology%></p>
-
-<% for(var ques in questions) { %>
-           <li><%= questions[ques].question %></li>
-           <% for(var answer in questions[ques].answers) { %>
-           		<li><%= questions[ques].answers[answer] %></li>
- 		   <% } %>
- 		   <p>difficultylevel : <%=questions[ques].difficultylevel%>,
-
-			conceptscore : <%=questions[ques].conceptscore%>,
-
-			importancescore : <%=questions[ques].importancescore%></p>
-			
-
- <% } %>
-
-
-
+<div class='well span10'>
+	<form>
+		<fieldset>
+			<legend><%=subtechnology%></legend>
+			<p><h4>Question :</h4></p> 
+			<p><textarea readonly class="field span10" rows="6" cols="800" 
+				placeholder="<%=question%>" name="question" /></p>
+			<p>Answers : <% for(var answer in answers) { %>
+				<p><textarea readonly class="field span10" rows="6" cols="800" 
+					placeholder="<%= answers[answer] %>" name="answer" /></p>
+				<% } %></p>
+			<p><div class='pull-right'>
+					<a class='btn btn-primary'>Difficulty Level : <%=difficultylevel%>  </a>
+					<a class='btn btn-primary'>Concept Score : <%=conceptscore%>  </a>
+					<a class='btn btn-primary'>Importance Score : <%=importancescore%></a>
+				</div>
+			</p>
+		</fieldset>
+	</form>
+</div>

@@ -1,19 +1,19 @@
-<form>
-	<fieldset>
-		<legend>Question Form</legend>
-		<p>Enter Question<textarea rows="10" cols="80" name="question" /></p>
-		<p>
-			<select name="subtech" multiple>
-  				<option id='subTechnology'></option>
-			</select>
-
-
-		</p>
-		<p>	Difficulty Score<input type="number" max='10' min ='1' name="difficultylevel"/>
-			Concept Score<input type="number" max='10' min ='1' name="conceptscore" />
-			Importance Score<input type="number" max='10' min ='1' name="importancescore" />
-		</p>
-		<p>Enter Answer : <textarea rows="10" cols="80" name="answer" /></p>
-		<input type="submit" value="Add" />
-	</fieldset>
-</form>
+<div class='well span10'>
+	<form>
+		<fieldset>
+			<legend>Question Form</legend>
+			<p>Question : </p>
+			<p><textarea class="field span10" rows="6" cols="800" placeholder="Enter Question" name="question" /></p>
+			<p>
+				<div id="multiselect" />
+			</p>
+			<p>	Difficulty Score : <input type="number" max='10' min ='1' name="difficultylevel" class='span1'/>
+				Concept Score : <input type="number" max='10' min ='1' name="conceptscore"  class='span1'/>
+				Importance Score : <input type="number" max='10' min ='1' name="importancescore"  class='span1'/>
+			</p>
+			<p>Answer : </p>
+			<p><textarea class="field span10" rows="6" cols="800" placeholder="Enter Answer" name="answer" /></p>
+			<input type="submit" class='btn btn-success pull-right span2' value="Submit Question" />
+		</fieldset>
+	</form>
+</div>

@@ -1,45 +1,39 @@
-<div class="header"> 
-</div>
 
-<div class = "body">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./styles/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="./styles/bootstrap-responsive.css" rel="stylesheet">
+	<script src="./js/libs/bootstrap.min.js"></script>
+</head>
 
-	<div id="side-left-paneId", class="side-left-pane">
-		<div class="side-left-pane-enter-review-question">
-			<p><a href="#" id="enterquestionId">Enter Question</a></p>
-			<p><a href="#" id="reviewquestionId">Review Question</a></p>
+<body>
+
+	<div class = "container-fluid">
+		<header class='row-fluid'>
+			<div class='span12'>
+				<nav class='navbar'>
+					<div class='navbar-inner'>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="divider"></div>
+
+		<div class='row'>
+			<div id="side-left-paneId" class="span2">
+				<div class="side-left-pane-enter-review-question">
+					<p><a href="#" class='btn btn-primary' id="enterquestionId">Enter Question</a></p>
+					<p><a href="#" class='btn btn-primary' id="reviewquestionId">Review Question</a></p>
+				</div>
+
+				<div id="side-left-pane-technology-paneId", class="side-left-pane-technology-pane"></div>
+			</div>
+			<div id="side-right-paneId" class="span10">
+				<div id ="side-right-pane-question-spaceId", class="side-right-pane-question-space"></div>
+			</div>
 		</div>
-
-		<div id="side-left-pane-technology-paneId", class="side-left-pane-technology-pane">
-
-		</div>
-
 	</div>
 
-	<div id="side-right-paneId",class="side-right-pane">
-		<div id ="side-right-pane-question-spaceId", class="side-right-pane-question-space">
-
-		</div>
-
-	</div>
-
-</div>
-
-
-<!-- <div class="header">
-	<div id = "c1" , class="index-side-technology-pane"></div>
-	
-</div>
- -->
-<style>
-#side-left-paneId {
-    height:500px;
-    width:150px;
-    float:left;
-}
-#side-right-paneId {
-	height:500px;
-	width:900px;
-	float:left;
-    
-}
-</style>
+<body>
