@@ -1,0 +1,1 @@
+This is an empty folder. Files in filder are created at runtime by mongodb
