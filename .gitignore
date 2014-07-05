@@ -1,3 +1,4 @@
 QASystem/bin
+QASystem/data/*
 QASystem/data/journal
 QASystem/data/mongod.lock
