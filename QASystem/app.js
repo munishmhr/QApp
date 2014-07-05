@@ -27,9 +27,16 @@ app.configure(function () {
 });
 
 /*
-This address will be called first when localhost:// is loaded
-*/
+ * Loads QASystem/views/index.jade file
+ * /index.jade file loads a) 'QASystem/public/js/boot', b) QASystem/public/js/libs/require.js'
+ * public/js/boot.js loads QASystem/public/js/QApp.js
+ * public/js/QApp.js loads public/js/router.js
+ * public/js/QApp.js sets window.location.hash = 'index' which triggers the router to load routes:index
+ * public/js/router.js loads a)public/js/views/index.js and b) public/js/models/techCollection.js
+ * Browser then displays the view index.js
+ */
 app.get('/', function (req, res) {
+	console.log("app.js::app.get /");
 	res.render('index.jade');
 });
 
@@ -37,6 +44,7 @@ app.get('/', function (req, res) {
   After all booting is done by "/" address "/index" will be loaded as view page
 */
 app.get('/index', function (req, res) {
+	console.log("app.js::app.get /index");
 	models.TechnologysList.populateTech(function (docs) {
 		res.send(docs);
 	});
