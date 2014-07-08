@@ -1,18 +1,23 @@
-<div class='well span10'>
+<div class='well' style="margin-top: 70px;">
 	<form>
-		<fieldset>
-			<legend>Question Form</legend>
+		<fieldset >
+			<legend>Enter Question:</legend>
+            <p>Title:</p>
+            <p><input type="text" name="title" style="width: 100%"></p>
 			<p>Question : </p>
-			<p><textarea class="field span10" rows="6" cols="800" placeholder="Enter Question" name="question" /></p>
+			<p><textarea class="field span10" rows="6" placeholder="Enter Question" name="question" /></p>
 			<p>
 				<div id="multiselect" />
 			</p>
-			<p>	Difficulty Score : <input type="number" max='10' min ='1' name="difficultylevel" class='span1'/>
-				Concept Score : <input type="number" max='10' min ='1' name="conceptscore"  class='span1'/>
-				Importance Score : <input type="number" max='10' min ='1' name="importancescore"  class='span1'/>
+			<p style="margin-left: 100px">Difficulty Score : <input type="number" max='10' min ='1' name="difficultylevel" class='span1' />
+            </p>
+            <p>Concept Score : <input type="number" max='10' min ='1' name="conceptscore"  class='span1'/>
+            </p>
+            <p>Importance Score : <input type="number" max='10' min ='1' name="importancescore"  class='span1'/>
 			</p>
+
 			<p>Answer : </p>
-			<p><textarea class="field span10" rows="6" cols="800" placeholder="Enter Answer" name="answer" /></p>
+			<p><textarea class="field span10" rows="6" placeholder="Enter Answer" name="answer" /></p>
 			<input type="submit" class='btn btn-success pull-right span2' value="Submit Question" />
 		</fieldset>
 	</form>

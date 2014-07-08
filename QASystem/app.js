@@ -80,7 +80,7 @@ app.get('/subtechnologies', function (req, res) {
   This is requested by ajax request in index.js view in "updatequestion" method
 */
 app.post('/questionsubmit', function (req, res) {
-	//console.log(req.param('subtechnology',[]));
+    console.log("app.js:: /questionsubmit");
 	models.TechnologysList.questionInsert(req.param('subtechnology', []), req.param('question', ''), req.param('answer', ''),
 		req.param('difficultylevel'), req.param('conceptscore'), req.param('importancescore'), function (success) {
 			if (success == true) {

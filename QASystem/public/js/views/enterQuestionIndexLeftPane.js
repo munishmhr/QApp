@@ -2,14 +2,19 @@
 	This view is called in enterQuestion method if index.js and has 2 view embedded in it one has form 
 	and other has multiselect subtechnology(SubtechMultiSelectView.js).
 */
-define(['text!templates/enterQuestionIndexLeftPane.html','models/subTechnologiesCollection',
-	'views/subTechMultiSelectView'], 
+define([
+        'text!templates/enterQuestionIndexLeftPane.html',
+        'models/subTechnologiesCollection',
+        'views/subTechMultiSelectView'
+    ],
 	function(indexTemplate,SubtechnologiesCollection,SubtechMultiSelectView) {
 	
 	    var EnterQuestionIndexLeftPane = Backbone.View.extend({
 
 		    render: function() {
+                console.log("enterQuestionIndexLeftPane::render::");
 		    	  this.$el.html(_.template(indexTemplate));
+
 			      var subtechnologiesCollection = new SubtechnologiesCollection();
 			      subtechnologiesCollection.fetch({
 			      	
